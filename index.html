@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 24.8.1.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="00:00:00"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		p { line-height: 115%; margin-bottom: 0.1in; background: transparent }
+		pre { background: transparent }
+		pre.western { font-family: "Liberation Mono", monospace; font-size: 10pt }
+		pre.cjk { font-family: "NSimSun", monospace; font-size: 10pt }
+		pre.ctl { font-family: "Liberation Mono", monospace; font-size: 10pt }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><pre class="western">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;id&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;title&gt;Untuk Sherlly ❤️&lt;/title&gt;
+
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Playfair+Display&amp;family=Poppins:wght@300&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+
+&lt;style&gt;
+body {
+  margin:0;
+  overflow:hidden;
+  font-family:'Poppins', sans-serif;
+  color:white;
+  background:black;
+}
+
+video {
+  position:fixed;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  z-index:-2;
+}
+
+.overlay {
+  position:fixed;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.6);
+  z-index:-1;
+}
+
+.slide {
+  position:absolute;
+  width:100%;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:30px;
+  opacity:0;
+  transition:2s;
+}
+
+.active {
+  opacity:1;
+}
+
+h1 {
+  font-family:'Playfair Display';
+  font-size:30px;
+  line-height:1.5;
+}
+
+p {
+  margin-top:15px;
+  font-size:18px;
+  opacity:0.85;
+}
+
+#countdown {
+  margin-top:20px;
+  font-size:18px;
+}
+
+.particle {
+  position:fixed;
+  top:-10px;
+  border-radius:50%;
+  opacity:0.7;
+  animation:fall linear infinite;
+}
+
+@keyframes fall {
+  to { transform:translateY(110vh); }
+}
+&lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;!-- VIDEO --&gt;
+&lt;video autoplay muted loop&gt;
+  &lt;source src=&quot;bg.mp4&quot; type=&quot;video/mp4&quot;&gt;
+&lt;/video&gt;
+
+&lt;div class=&quot;overlay&quot;&gt;&lt;/div&gt;
+
+&lt;!-- MUSIC --&gt;
+&lt;audio autoplay loop&gt;
+  &lt;source src=&quot;musik.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+
+&lt;!-- SLIDE 1 --&gt;
+&lt;div class=&quot;slide active&quot;&gt;
+  &lt;h1&gt;Untuk kamu&lt;br&gt;🌸 Sherlly Merliana 🌸&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;!-- SLIDE 2 --&gt;
+&lt;div class=&quot;slide&quot;&gt;
+  &lt;div&gt;
+    &lt;h1&gt;Selamat ulang tahun ke-24 ❤️&lt;/h1&gt;
+    &lt;p&gt;Semoga semua impianmu menjadi nyata&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- SLIDE 3 --&gt;
+&lt;div class=&quot;slide&quot;&gt;
+  &lt;div&gt;
+    &lt;h1&gt;LDR Indonesia 🇮🇩 — Jepang 🇯🇵&lt;/h1&gt;
+    &lt;p&gt;Jarak ini jauh, tapi cintaku selalu dekat&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- SLIDE 4 --&gt;
+&lt;div class=&quot;slide&quot;&gt;
+  &lt;div&gt;
+    &lt;h1&gt;Menuju 2 Mei 💕&lt;/h1&gt;
+    &lt;div id=&quot;countdown&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- SLIDE 5 --&gt;
+&lt;div class=&quot;slide&quot;&gt;
+  &lt;div&gt;
+    &lt;h1&gt;Kalau jarak ini berat…&lt;/h1&gt;
+    &lt;p&gt;aku juga merasakannya setiap hari&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- ENDING --&gt;
+&lt;div class=&quot;slide&quot; id=&quot;ending&quot;&gt;
+  &lt;div&gt;
+    &lt;h1 id=&quot;endingText&quot;&gt;&lt;/h1&gt;
+    &lt;p id=&quot;endingSub&quot; style=&quot;opacity:0; transition:2s;&quot;&gt;
+      Aku akan selalu memilih kamu ❤️
+    &lt;/p&gt;
+
+    &lt;audio id=&quot;voice&quot;&gt;
+      &lt;source src=&quot;voice.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+    &lt;/audio&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+let slides=document.querySelectorAll(&quot;.slide&quot;);
+let index=0;
+
+/* AUTO SLIDE */
+setInterval(()=&gt;{
+  slides[index].classList.remove(&quot;active&quot;);
+  index=(index+1)%slides.length;
+  slides[index].classList.add(&quot;active&quot;);
+},6000);
+
+/* COUNTDOWN */
+let target=new Date(&quot;May 2, 2026 00:00:00&quot;).getTime();
+
+setInterval(()=&gt;{
+  let now=new Date().getTime();
+  let diff=target-now;
+
+  let d=Math.floor(diff/(1000*60*60*24));
+  let h=Math.floor((diff%(1000*60*60*24))/(1000*60*60));
+  let m=Math.floor((diff%(1000*60*60))/(1000*60));
+
+  document.getElementById(&quot;countdown&quot;).innerHTML =
+  d+&quot; hari &quot;+h+&quot; jam &quot;+m+&quot; menit lagi ❤️&quot;;
+},1000);
+
+/* PARTICLES */
+for(let i=0;i&lt;40;i++){
+  let p=document.createElement(&quot;div&quot;);
+  p.classList.add(&quot;particle&quot;);
+
+  let size=Math.random()*6+4;
+  p.style.width=size+&quot;px&quot;;
+  p.style.height=size+&quot;px&quot;;
+  p.style.left=Math.random()*100+&quot;vw&quot;;
+  p.style.background=Math.random()&gt;0.5?&quot;pink&quot;:&quot;white&quot;;
+  p.style.animationDuration=(Math.random()*8+6)+&quot;s&quot;;
+
+  document.body.appendChild(p);
+}
+
+/* ENDING */
+let played=false;
+
+function playEnding(){
+  if(played) return;
+  played=true;
+
+  let text=&quot;Maaf aku belum bisa selalu ada di samping kamu...&quot;;
+  let el=document.getElementById(&quot;endingText&quot;);
+
+  let i=0;
+  function typing(){
+    if(i&lt;text.length){
+      el.innerHTML+=text.charAt(i);
+      i++;
+      setTimeout(typing,60);
+    }
+  }
+  typing();
+
+  setTimeout(()=&gt;{
+    document.getElementById(&quot;endingSub&quot;).style.opacity=1;
+  },4000);
+
+  setTimeout(()=&gt;{
+    document.getElementById(&quot;voice&quot;).play();
+  },5000);
+}
+
+setInterval(()=&gt;{
+  if(slides[index].id===&quot;ending&quot;){
+    playEnding();
+  }
+},1000);
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+</body>
+</html>
